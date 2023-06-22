@@ -1,0 +1,313 @@
+:root{
+    --pink: #FF7F99;
+    --yellow: #FFCA41;
+}
+
+*{
+    font-family: 'Jost', 'Arial';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+header{
+    background-color: var(--pink);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1vh;
+    position: sticky;
+    top: 0;
+    height: 7vh;
+}
+.logo{
+    align-items: center;
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+ul{
+    margin-right: 0.5vw;
+    width: 10%;
+    display: flex;
+}
+input[type=checkbox] {
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+.logo, .logo span{
+font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: var(--pink);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    input[type-checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+/*-----------------navbar responsive-----------*/
+li{
+    list-style: none;
+}
+span{
+    color: var(--yellow);
+}
+a:hover{
+    background-color: rgb(255, 202, 65, 0.3);
+    padding: 0.3vh 1vh 0.3vh 1vh;
+    border-radius: 15vh;
+    border: 1px solid var(--yellow);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+/*navbar*/
+main{
+    background-color: white;
+    text-align: center;
+}
+.title{
+    color: var(--pink);
+    font-size: 2rem;
+    margin-top: 10%;
+}
+.subtitle{
+    font-weight: lighter;
+}
+.pareja{
+    width: 60%;
+    margin-top: 10%;
+}
+.main-btn{
+    width: 40%;
+    border-radius: 10vh;
+    background-color: var(--yellow);
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+    border: none;
+    color: white;
+}
+.main-btn:hover{
+    box-shadow: 3px 3px 3px grey;
+}
+button{
+    width: 30%;
+    border-radius: 10vh;
+    background-color: var(--yellow);
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.7vh;
+}
+button:hover{
+    box-shadow: 2px 2px 2px grey;
+}
+#pedro, #maria, #andres, #melquiades{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+.pedro-photo, .maria-photo, .andres-photo, .melquiades-photo{
+    width: 50%;
+    border-radius: 48% 0 48% 48%;
+}
+p{
+    width: 90%;
+    text-align: justify;
+    margin-left: 2vh;
+}
+.contact{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0;
+}
+.pink-color{color: var(--pink);}
+#team{
+    background-color: var(--pink);
+    display: flex;
+}
+.pedro-pic, .maria-pic, .andres-pic, .melquiades-pic{
+    width: 20vh;
+    display: flex;
+    padding: 1vh;
+    margin-left: 5vh;
+}
+.icon{
+    width: 5vh;
+    height: 5vh;
+}
+.resume{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80vh;
+    height: 80vh;
+    font-size: 2rem;
+}
+h5 {font-size: 0.8rem;}
+.white{color: white;}
+/*--------abajo version desktop--------*/
+@media screen and (min-width: 768px) {
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 100%;
+}
+.menu{
+    margin-top: 1vh;
+    margin-left: 10vh;
+}
+ul{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    margin-top: 0.5vh;
+    align-items: center;
+    height: 100%;
+    margin-right: 5vh;
+    width: 30%;
+    margin-left: 10vh;
+}
+li{
+    margin-right: 1rem;
+    display: flex;
+    text-align: center;
+}
+.txt{
+    width: 70vh;
+    margin: 10vh 0 0 5vh;
+    text-align: justify;
+}
+.title{
+    font-size: 4rem;
+    width: 40vh;
+}
+.subtitle{
+    font-size: 2rem;
+    text-align: left;
+}
+.main-btn{
+    padding: 1vh;
+    font-size: 1.5rem;
+}
+#pedro, #maria, #andres, #melquiades{
+    display: flex;
+    margin-left: 5vh;
+    text-align: justify;
+    width: 90%;
+    margin-top: 20vh;
+}
+p{
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.description{
+    width: 100%;
+    margin-left: 10vh;
+}
+.contact{
+    margin-right: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: left;
+}
+button{
+    width: 65%;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 3.5vh;
+}
+#team{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 5vh;
+}
+.img-container{
+    display: flex;
+    height: 30%;
+    width: 100%;
+    justify-content: space-around;
+}
+.pedro-pic, .maria-pic, .andres-pic, .melquiades-pic{
+    width: 20vh;
+    display: flex;
+    margin-top: 3vh;
+}
+.pedro, .maria, .andres, .melquiades{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 25vh;
+    margin-top: 0;
+    margin-left: 3vh;
+}
+.resume{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h1{font-size: 2.5rem;}
+.icon{
+    width: 5vh;
+    height: 5vh;
+}
+h5{
+    text-align: center;
+    font-size: 1rem;
+}
+.pedro-photo, .maria-photo, .andres-photo, .melquiades-photo{
+    width: 30%;
+    height: 30%;
+    margin-top: 5vh;
+}
+.pareja{
+    height: 30%;
+    width: 30%;
+}
+
+}
+
+@media screen and (max-width: 300px) {
+button{
+    width: 50vh;
+}
+#team{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
